@@ -46,7 +46,7 @@ Certifique-se de ter o **Python 3.10+** instalado em sua máquina.
 
 1. **Clone o repositório:**
 ```bash
-git clone [https://github.com/DiogoAug16/painel-cambio.git](https://github.com/DiogoAug16/painel-cambio.git)
+git clone https://github.com/DiogoAug16/painel-cambio.git
 cd painel-cambio 
 ```
 
@@ -107,7 +107,7 @@ painel-cambio/
 ## 👨‍💻 Autor
 
 Diogo
-* GitHub: github.com/DiogoAug16
+* **GitHub:** [github.com/DiogoAug16](https://github.com/DiogoAug16)
 
 ## 📄 Licença
 
