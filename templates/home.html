@@ -1,0 +1,67 @@
+{%extends 'base.html' %}
+
+{%block title%}
+    💲| {{ _('Painel Câmbio') }}
+{%endblock%}
+
+{%block content%}
+<h1>{{ _('Painel Câmbio') }}</h1>
+
+<div class="d-flex my-3" style="max-width: 500px;">
+    <input id="amount" style="width: 130;" type="number" value="1" min="0.01" step="any" placeholder="Valor" class="form-control me-2">
+    <select id="currency" class="form-select ms-2" style="width: 150px;"></select>
+    <button type="button" id="convert" class="btn btn-primary ms-4">{{ _('Converter') }}</button>
+</div>
+
+<div class="d-flex flex-column mb-3" style="max-width: 240px;">
+    <label for="modeSelect" class="form-label fw-bold mb-1">{{ _('Visualização de tendência:')}}</label>
+    <select id="modeSelect" class="form-select">
+        <option value="current" selected>{{ _('Atual') }}</option>
+        <option value="historical">{{ _('Histórico (30 dias)') }}</option>
+    </select>
+</div>
+
+<div class="card p-2 mb-3 bg-light" style="font-size: 0.85rem; width: fit-content;">
+    <div class="fw-bold mb-1">{{ _('Legenda:') }}</div>
+    
+    <div id="legend-current" class="d-flex flex-wrap gap-3 align-items-center">
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #28a745; width: 12px; height: 12px;"> </span> >{{  _('1.00 (Forte)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #dc3545; width: 12px; height: 12px;"> </span> < {{ _('1.00 (Fraca)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #6c757d; width: 12px; height: 12px;"> </span>{{ _('Neutro') }}</div>
+    </div>
+
+    <div id="legend-historical" class="d-flex flex-wrap gap-3 align-items-center" style="display: none !important;">
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #006400; width: 12px; height: 12px;"> </span>{{ _('Subiu muito (> 5%%)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #28a745; width: 12px; height: 12px;"> </span>{{ _('Subiu (> 1%%)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #6c757d; width: 12px; height: 12px;"> </span>{{ _('Estável (± 1%%)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #dc3545; width: 12px; height: 12px;"> </span>{{ _('Caiu (< -1%%)') }}</div>
+        <div class="d-flex align-items-center"><span class="badge me-1" style="background-color: #8B0000; width: 12px; height: 12px;"> </span>{{ _('Caiu muito (< -5%%)') }}</div>
+    </div>
+</div>
+<div id="results" class="grid"></div>
+
+<div id="chartBox" class="chart-box" style="display:none; height: 440px;">
+
+    <button id="closeChart" class="close-chart" style="z-index: 1000; padding: 0;">✕</button>   
+     
+    <div id="chartLoader" class="d-flex justify-content-center align-items-center" style="height: 300px;">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+            <span class="visually-hidden">{{ _('Carregando...') }}</span>
+        </div>
+    </div>
+
+    <div id="chartWrapper" style="display: none; position: relative; height: 300px; width: 100%;">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <button id="resetZoom" class="btn btn-primary mt-3 d-block mx-auto ">{{ _('Resetar Zoom') }}</button>
+</div>
+
+<script>
+    const APP_TRANSLATIONS = {
+        chart_last_30: "{{ _('Últimos 30 dias') }}",
+        chart_from_1999: "{{ _('Desde 1999') }}"
+    };
+</script>
+
+{%endblock%}

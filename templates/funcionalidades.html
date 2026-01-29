@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ _('Funcionalidades - Painel Câmbio')}}
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">{{ _('Funcionalidades do Sistema')}}</h1>
+        <p class="lead text-muted">{{ _('Uma visão geral das ferramentas e tecnologias utilizadas neste painel de câmbio.')}}</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                            💱
+                        </div>
+                        <h4 class="card-title mb-0">{{ _('Conversão em Tempo Real')}}</h4>
+                    </div>
+                    <p class="card-text">
+                        {{ _('Converte instantaneamente uma moeda base (ex: BRL, USD, EUR) para mais de 30 outras moedas globais. Utiliza a API <strong>Frankfurter</strong> para garantir taxas de câmbio atualizadas diariamente.')}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                            👁️
+                        </div>
+                        <h4 class="card-title mb-0">{{ _('Análise de Tendência')}}</h4>
+                    </div>
+                    <p class="card-text">
+                        {{ _('O sistema oferece dois modos inteligentes de visualização:')}}
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>📊 {{ _('Modo Atual:')}}</strong> {{ _('Indica se a moeda alvo vale mais (>1.00) ou menos (<1.00) que a base.')}}</li>
+                        <li><strong>📅{{ _('Modo Histórico (30 dias):')}}</strong> {{ _('Analisa se a moeda se valorizou ou desvalorizou em relação à média do último mês, com indicadores visuais de estabilidade (zona neutra de ±1%%).')}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                            📈
+                        </div>
+                        <h4 class="card-title mb-0">{{ _('Gráficos Avançados')}}</h4>
+                    </div>
+                    <p class="card-text">
+                        {{ _('Visualize o histórico completo das cotações desde')}} <strong>1999</strong>. 
+                        {{ _('O sistema utiliza algoritmos de ')}}<em>Downsampling</em>{{ _(' para renderizar milhares de pontos de dados instantaneamente sem travar o navegador.')}}
+                        <br><br>
+                        {{ _('Inclui ferramentas de ')}} <strong>Zoom</strong>{{ _(' (roda do mouse) e ')}}<strong>Pan</strong>{{ _('(arrastar), com botão para resetar a visualização.')}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                            ⚡
+                        </div>
+                        <h4 class="card-title mb-0">{{ _('Alta Performance')}}</h4>
+                    </div>
+                    <p class="card-text">
+                        {{ _('O sistema foi otimizado para velocidade:')}}
+                    </p>
+                    <ul>
+                        <li><strong>{{ _('Cache Inteligente:')}}</strong>{{ _(' Armazena históricos e taxas no navegador (Session Storage) para evitar requisições repetidas.')}}</li>
+                        <li><strong>Batch Requests:</strong>{{ _(' Busca o histórico de todas as moedas em uma única requisição otimizada.')}}</li>
+                        <li><strong>{{ _('UX Fluida:')}}</strong>{{ _(' Feedback visual imediato com loaders enquanto os dados são processados.')}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="/" class="btn btn-primary btn-lg px-5 shadow">
+            {{ _('Voltar para o Painel')}}
+        </a>
+    </div>
+</div>
+{% endblock %}

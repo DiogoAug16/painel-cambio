@@ -1,0 +1,290 @@
+# English translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-28 06:08-0400\n"
+"PO-Revision-Date: 2026-01-28 06:08-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/base.html:5
+msgid "Meu Site"
+msgstr "My Site"
+
+#: templates/funcionalidades.html:4
+msgid "Funcionalidades - Painel Câmbio"
+msgstr "Features - Currency Dashboard"
+
+#: templates/funcionalidades.html:10
+msgid "Funcionalidades do Sistema"
+msgstr "System Features"
+
+#: templates/funcionalidades.html:11
+msgid ""
+"Uma visão geral das ferramentas e tecnologias utilizadas neste painel de "
+"câmbio."
+msgstr ""
+"An overview of the tools and technologies used in this currency dashboard."
+
+#: templates/funcionalidades.html:22
+msgid "Conversão em Tempo Real"
+msgstr "Real-Time Conversion"
+
+#: templates/funcionalidades.html:25
+msgid ""
+"Converte instantaneamente uma moeda base (ex: BRL, USD, EUR) para mais de"
+" 30 outras moedas globais. Utiliza a API <strong>Frankfurter</strong> "
+"para garantir taxas de câmbio atualizadas diariamente."
+msgstr ""
+"Instantly converts a base currency (e.g., BRL, USD, EUR) to over 30 other "
+"global currencies. Uses the <strong>Frankfurter</strong> API to ensure "
+"exchange rates are updated daily."
+
+#: templates/funcionalidades.html:38
+msgid "Análise de Tendência"
+msgstr "Trend Analysis"
+
+#: templates/funcionalidades.html:41
+msgid "O sistema oferece dois modos inteligentes de visualização:"
+msgstr "The system offers two intelligent visualization modes:"
+
+#: templates/funcionalidades.html:44
+msgid "Modo Atual:"
+msgstr "Current Mode:"
+
+#: templates/funcionalidades.html:44
+msgid "Indica se a moeda alvo vale mais (>1.00) ou menos (<1.00) que a base."
+msgstr "Indicates if the target currency is worth more (>1.00) or less (<1.00) than the base."
+
+#: templates/funcionalidades.html:45
+msgid "Modo Histórico (30 dias):"
+msgstr "Historical Mode (30 days):"
+
+#: templates/funcionalidades.html:45
+#, python-format
+msgid ""
+"Analisa se a moeda se valorizou ou desvalorizou em relação à média do "
+"último mês, com indicadores visuais de estabilidade (zona neutra de "
+"±1%%)."
+msgstr ""
+"Analyzes whether the currency appreciated or depreciated relative to the "
+"last month's average, with visual stability indicators (±1%% neutral zone)."
+
+#: templates/funcionalidades.html:58
+msgid "Gráficos Avançados"
+msgstr "Advanced Charts"
+
+#: templates/funcionalidades.html:61
+msgid "Visualize o histórico completo das cotações desde"
+msgstr "View the complete rate history since"
+
+#: templates/funcionalidades.html:62
+msgid "O sistema utiliza algoritmos de "
+msgstr "The system uses "
+
+#: templates/funcionalidades.html:62
+msgid ""
+" para renderizar milhares de pontos de dados instantaneamente sem travar o"
+" navegador."
+msgstr ""
+" algorithms to render thousands of data points instantly without freezing the"
+" browser."
+
+#: templates/funcionalidades.html:64
+msgid "Inclui ferramentas de "
+msgstr "Includes "
+
+#: templates/funcionalidades.html:64
+msgid " (roda do mouse) e "
+msgstr " tools (mouse wheel) and "
+
+#: templates/funcionalidades.html:64
+msgid "(arrastar), com botão para resetar a visualização."
+msgstr "(drag), with a button to reset the view."
+
+#: templates/funcionalidades.html:77
+msgid "Alta Performance"
+msgstr "High Performance"
+
+#: templates/funcionalidades.html:80
+msgid "O sistema foi otimizado para velocidade:"
+msgstr "The system was optimized for speed:"
+
+#: templates/funcionalidades.html:83
+msgid "Cache Inteligente:"
+msgstr "Smart Cache:"
+
+#: templates/funcionalidades.html:83
+msgid ""
+" Armazena históricos e taxas no navegador (Session Storage) para evitar "
+"requisições repetidas."
+msgstr ""
+" Stores history and rates in the browser (Session Storage) to avoid "
+"repeated requests."
+
+#: templates/funcionalidades.html:84
+msgid " Busca o histórico de todas as moedas em uma única requisição otimizada."
+msgstr " Fetches the history of all currencies in a single optimized request."
+
+#: templates/funcionalidades.html:85
+msgid "UX Fluida:"
+msgstr "Fluid UX:"
+
+#: templates/funcionalidades.html:85
+msgid " Feedback visual imediato com loaders enquanto os dados são processados."
+msgstr " Immediate visual feedback with loaders while data is processed."
+
+#: templates/funcionalidades.html:94
+msgid "Voltar para o Painel"
+msgstr "Back to Dashboard"
+
+#: templates/home.html:4 templates/home.html:8
+msgid "Painel Câmbio"
+msgstr "Currency Dashboard"
+
+#: templates/home.html:13
+msgid "Converter"
+msgstr "Convert"
+
+#: templates/home.html:17
+msgid "Visualização de tendência:"
+msgstr "Trend Visualization:"
+
+#: templates/home.html:19
+msgid "Atual"
+msgstr "Current"
+
+#: templates/home.html:20
+msgid "Histórico (30 dias)"
+msgstr "Historical (30 days)"
+
+#: templates/home.html:25
+msgid "Legenda:"
+msgstr "Legend:"
+
+#: templates/home.html:28
+msgid "1.00 (Forte)"
+msgstr "1.00 (Strong)"
+
+#: templates/home.html:29
+msgid "1.00 (Fraca)"
+msgstr "1.00 (Weak)"
+
+#: templates/home.html:30
+msgid "Neutro"
+msgstr "Neutral"
+
+#: templates/home.html:34
+#, python-format
+msgid "Subiu muito (> 5%%)"
+msgstr "Surged (> 5%%)"
+
+#: templates/home.html:35
+#, python-format
+msgid "Subiu (> 1%%)"
+msgstr "Rose (> 1%%)"
+
+#: templates/home.html:36
+#, python-format
+msgid "Estável (± 1%%)"
+msgstr "Stable (± 1%%)"
+
+#: templates/home.html:37
+#, python-format
+msgid "Caiu (< -1%%)"
+msgstr "Fell (< -1%%)"
+
+#: templates/home.html:38
+#, python-format
+msgid "Caiu muito (< -5%%)"
+msgstr "Plummeted (< -5%%)"
+
+#: templates/home.html:49
+msgid "Carregando..."
+msgstr "Loading..."
+
+#: templates/home.html:57
+msgid "Resetar Zoom"
+msgstr "Reset Zoom"
+
+#: templates/home.html:62
+msgid "Últimos 30 dias"
+msgstr "Last 30 days"
+
+#: templates/home.html:63
+msgid "Desde 1999"
+msgstr "Since 1999"
+
+#: templates/navbar.html:12
+msgid "Inicio"
+msgstr "Home"
+
+#: templates/navbar.html:17
+msgid "Funcionalidades"
+msgstr "Features"
+
+#: templates/navbar.html:20
+msgid "Sobre"
+msgstr "About"
+
+#: templates/navbar.html:26
+msgid "Idioma"
+msgstr "Language"
+
+#: templates/navbar.html:29
+msgid "Português"
+msgstr "Portuguese"
+
+#: templates/navbar.html:30
+msgid "Inglês"
+msgstr "English"
+
+#: templates/sobre.html:4
+msgid "Sobre - Painel Câmbio"
+msgstr "About - Currency Dashboard"
+
+#: templates/sobre.html:12
+msgid "Sobre o Projeto"
+msgstr "About the Project"
+
+#: templates/sobre.html:14
+msgid ""
+"Uma aplicação web moderna para conversão de moedas e análise de "
+"tendências históricas, desenvolvida com foco em performance e experiência"
+" do usuário."
+msgstr ""
+"A modern web application for currency conversion and historical trend "
+"analysis, developed with a focus on performance and user experience."
+
+#: templates/sobre.html:26
+msgid "Desenvolvedor Full Stack"
+msgstr "Full Stack Developer"
+
+#: templates/sobre.html:29
+msgid ""
+"Este projeto demonstra a integração entre um backend Python (Flask) "
+"robusto e um frontend dinâmico, utilizando APIs financeiras reais e "
+"técnicas de otimização de cache."
+msgstr ""
+"This project demonstrates the integration between a robust Python (Flask) "
+"backend and a dynamic frontend, using real financial APIs and cache "
+"optimization techniques."
+
+#: templates/sobre.html:42
+msgid "Tecnologias Utilizadas"
+msgstr "Technologies Used"
+
+#: templates/sobre.html:54
+msgid "Todos os direitos reservados."
+msgstr "All rights reserved."

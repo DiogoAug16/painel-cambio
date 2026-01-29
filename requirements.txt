@@ -1,0 +1,79 @@
+# ==============================
+# Web Framework
+# ==============================
+Flask==3.1.1                 # Core web framework
+Werkzeug==3.1.3              # WSGI utilities for Flask
+Jinja2==3.1.6                # Templating engine
+MarkupSafe==3.0.3            # Safe string handling for templates
+click==8.3.1                 # Command line utilities (used by Flask)
+
+# ==============================
+# Database & Migrations
+# ==============================
+Flask-SQLAlchemy==3.1.1      # Flask integration with SQLAlchemy
+SQLAlchemy==2.0.43           # ORM for database interaction
+Flask-Migrate==4.1.0          # Database migrations for Flask
+psycopg2-binary==2.9.10      # PostgreSQL adapter for Python
+alembic==1.18.1               # DB migration tool used by Flask-Migrate
+
+# ==============================
+# Authentication & Security
+# ==============================
+Flask-Login==0.6.3            # User session management
+Flask-Bcrypt==1.0.1           # Password hashing for Flask
+bcrypt==5.0.0                 # Password hashing backend
+itsdangerous==2.2.0           # Secure data serialization
+email_validator==2.2.0        # Email validation library
+
+# ==============================
+# Forms & Validation
+# ==============================
+Flask-WTF==1.2.2              # Flask forms integration
+WTForms==3.2.1                # Forms and validation library
+marshmallow==4.2.1            # Data serialization & validation
+
+# ==============================
+# Caching & Performance
+# ==============================
+Flask-Caching==2.3.1          # Caching for Flask
+cachelib==0.13.0              # Cache backend library
+gevent==25.5.1                # Async networking
+greenlet==3.3.1               # Lightweight concurrent coroutines
+gunicorn==24.1.1              # WSGI server for production
+
+# ==============================
+# Development & Debugging
+# ==============================
+Flask-DebugToolbar==0.16.0    # Debug toolbar for Flask
+python-dotenv==1.2.1          # Load environment variables from .env
+
+# ==============================
+# Static Files & Assets
+# ==============================
+Flask-Static-Digest==0.4.1    # Hash static files for cache busting
+
+# ==============================
+# Networking & HTTP
+# ==============================
+requests==2.32.5              # HTTP requests
+urllib3==2.6.3                # HTTP library dependency
+dnspython==2.8.0              # DNS toolkit
+certifi==2026.1.4             # SSL certificates
+charset-normalizer==3.4.4     # Character encoding detection
+idna==3.11                    # Internationalized domain names
+
+# ==============================
+# Environment & Configuration
+# ==============================
+environs==14.3.0              # Environment variable parsing
+
+# ==============================
+# Templating / Other Utilities
+# ==============================
+Mako==1.3.10                  # Optional templating engine
+zope.event==6.1               # Event handling
+zope.interface==8.2           # Interfaces for Python
+packaging==26.0               # Version and packaging utilities
+typing_extensions==4.15.0     # Backport of typing features
+setuptools==80.10.2           # Packaging utilities
+blinker==1.9.0                # Signals library for Flask
