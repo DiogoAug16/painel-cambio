@@ -77,3 +77,9 @@ packaging==26.0               # Version and packaging utilities
 typing_extensions==4.15.0     # Backport of typing features
 setuptools==80.10.2           # Packaging utilities
 blinker==1.9.0                # Signals library for Flask
+
+# ==============================
+# Internationalization / Localization
+# ==============================
+Flask-Babel==4.0.0
+Babel==2.15.0
