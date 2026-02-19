@@ -1,0 +1,15 @@
+services:
+  painelcambio:
+    image: painelcambio
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: >
+      python -m debugpy --listen 0.0.0.0:5678 -m flask run --host 0.0.0.0 --port 5000
+
+    ports:
+      - 5000:5000
+      - 5678:5678
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development

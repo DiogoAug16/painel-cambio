@@ -46,6 +46,7 @@ gunicorn==24.1.1              # WSGI server for production
 # ==============================
 Flask-DebugToolbar==0.16.0    # Debug toolbar for Flask
 python-dotenv==1.2.1          # Load environment variables from .env
+debugpy
 
 # ==============================
 # Static Files & Assets
@@ -83,3 +84,4 @@ blinker==1.9.0                # Signals library for Flask
 # ==============================
 Flask-Babel==4.0.0
 Babel==2.15.0
+
